@@ -2,26 +2,32 @@ import React from 'react'
 import { render } from 'react-dom';
 import './App.css';
 import cat from './cat.jpg'
-let element = {
-  content:{
-    title:'Đam mê',
-    body :'Coder, Toán học'
-  },
-  content1:{
-    title:'Sở thích',
-    body:'Chơi thể thao,đọc truyện'
-  },
-  content2:{
-    title:'Skill',
-    body:'Đọc tài liệu tốt, nhạy cảm'
-  },
-  content3:{
-    title:'Tính cách',
-    body:'Hòa đồng, hoạt bát'
-  }
 
-};
+
 function App() {
+  const like = [
+    {
+      sothich: 'Bong da',
+      content: 'Choi rat gioi',
+      cate: 'Tien dao',
+        },
+        {
+      sothich: 'Dam me',
+      content: 'Coder',
+      cate: '',
+        }
+        
+    ];
+    const myName = 'Bii';
+    const element = like.map((like,index) => {
+      return(
+           <div className="right__content__right">
+             <p>{like.sothich}</p>
+               {like.cate}
+               {like.content}
+           </div>
+      );    
+    });
   return (
     <div className="container">
       <div className="content">
@@ -45,25 +51,7 @@ function App() {
               <div className='circle right' />
             </div>
             <div className="right__content">
-              <div className="right__content__right">
-                  <p>{element.content.title}</p>
-                   {element.content.body}
-              </div>
-              <div className="right__content__left">
-                  <p>{element.content1.title}</p>
-                   {element.content1.body}
-              </div>
-              
-            </div>
-            <div className="right__content">
-                <div className="right__content__right">
-                    <p>{element.content2.title}</p>
-                     {element.content2.body}
-                </div>
-                <div className="right__content__left">
-                    <p>{element.content3.title}</p>
-                     {element.content3.body}
-                </div>
+                 {element}
             </div>
        </div>
       </div>
