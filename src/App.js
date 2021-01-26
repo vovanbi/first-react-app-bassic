@@ -1,3 +1,4 @@
+// eslint-disable
 import React from 'react'
 import { render } from 'react-dom';
 import './App.css';
@@ -16,15 +17,14 @@ function App() {
       content: 'Coder',
       cate: '',
         }
-        
     ];
     const myName = 'Bii';
     const element = like.map((like,index) => {
       return(
            <div className="right__content__right">
              <p>{like.sothich}</p>
-               {like.cate}
-               {like.content}
+                {like.cate}
+                {like.content}
            </div>
       );    
     });
@@ -37,7 +37,7 @@ function App() {
                 </div>
                 <div className="your_name">
                       <p>Hello</p>
-                      <p>My Name is Bii</p>
+                      <p>My Name is {myName}</p>
                 </div>
         </div>
         <div className="right">

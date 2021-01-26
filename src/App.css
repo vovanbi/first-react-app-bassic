@@ -34,7 +34,7 @@ body,html{
   font-weight: 30px;
 }
 .content .right .right__content{
-  display: flex;
+   display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
