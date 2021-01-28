@@ -34,7 +34,7 @@ body,html{
   font-weight: 30px;
 }
 .content .right .right__content{
-   display: flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
@@ -88,7 +88,7 @@ body,html{
   border-radius: 50%;
 }
 .content .right .intro-myself__content__line  .left {
-  left: 0;
+ left:0;
 }
 .content .right .intro-myself__content__line  .right {
   right: 0;
